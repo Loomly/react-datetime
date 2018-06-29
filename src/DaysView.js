@@ -41,7 +41,7 @@ var DateTimePickerDays = React.createClass({
 	 */
 	getDaysOfWeek: function( locale ){
 		var days = locale._weekdaysMin,
-			first = locale.firstDayOfWeek(),
+			first = this.props.firstDayOfWeek || locale.firstDayOfWeek(),
 			dow = [],
 			i = 0
 		;
@@ -68,6 +68,10 @@ var DateTimePickerDays = React.createClass({
 
 		// Go to the last week of the previous month
 		prevMonth.date( prevMonth.daysInMonth() ).startOf('week');
+		if (this.props.firstDayOfWeek) {
+			prevMonth.weekday(this.props.firstDayOfWeek);
+		}
+
 		var lastDay = prevMonth.clone().add(42, 'd');
 
 		while ( prevMonth.isBefore( lastDay ) ){
