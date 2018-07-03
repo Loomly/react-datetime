@@ -47,7 +47,7 @@ var DateTimePickerDays = React.createClass({
 		;
 
 		if (this.props.firstDayOfWeek) {
-			first = moment().day(this.props.firstDayOfWeek).day()
+			first = moment().day(this.props.firstDayOfWeek).day();
 		}
 
 		days.forEach( function( day ){
