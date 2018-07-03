@@ -39,7 +39,7 @@ var Datetime = React.createClass({
 		strictParsing: TYPES.bool,
 		closeOnSelect: TYPES.bool,
 		closeOnTab: TYPES.bool,
-		firstDayOfWeek: TYPES.number
+		firstDayOfWeek: TYPES.string
 	},
 
 	getDefaultProps: function() {
