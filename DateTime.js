@@ -43,7 +43,7 @@ var Datetime = createClass({
 		strictParsing: TYPES.bool,
 		closeOnSelect: TYPES.bool,
 		closeOnTab: TYPES.bool,
-		firstDayOfWeek: TYPES.number
+		firstDayOfWeek: TYPES.string
 	},
 
 	getInitialState: function() {
