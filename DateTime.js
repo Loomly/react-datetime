@@ -397,7 +397,7 @@ var Datetime = createClass({
 		if (props.utc) {
 			m = moment.utc(date, format, props.strictParsing);
 		} else if (props.displayTimeZone) {
-			m = moment.tz(date, format, props.displayTimeZone, props.strictParsing);
+			m = moment.tz(date, format, props.strictParsing, props.displayTimeZone);
 		} else {
 			m = moment(date, format, props.strictParsing);
 		}
