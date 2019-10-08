@@ -3,7 +3,7 @@
 var assign = require('object-assign'),
 	PropTypes = require('prop-types'),
 	createClass = require('create-react-class'),
-	moment = require('moment-timezone'),
+	moment = require('moment-timezone/builds/moment-timezone-with-data-2012-2022'),
 	React = require('react'),
 	CalendarContainer = require('./src/CalendarContainer'),
 	onClickOutside = require('react-onclickoutside').default
